@@ -8,32 +8,56 @@
     <title>Paloma Contreras - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1fb5fcdd4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- acá arraca el header -->
-    <header>
+    <header class="navbar container-nav">
         <nav class="container-nav">
             <ul class="container-nav">
-                <li><a href="#hola" class="links-nav">Hola</a></li>
-                <li><a href="#conocimientos" class="links-nav">Conocimientos</a></li>
-                <li><a href="#proyectos" class="links-nav">Proyectos</a></li>
-                <li><a href="#contacto" class="links-nav">Contacto</a></li>
+                <li>
+                    <a href="#hola" class="links-nav">
+                        Hola</a>
+                </li>
+                <li>
+                    <a href="#conocimientos" class="links-nav">
+                        Conocimientos</a>
+                </li>
+                <li>
+                    <a href="#proyectos" class="links-nav">
+                        Proyectos</a>
+                </li>
+                <li>
+                    <a href="#contacto" class="links-nav contact">
+                        Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
     <!-- hasta acá header -->
 
     <!-- acá arranca sección presentación -->
+    <a name="hola"></a>
     <section class="secc-presentacion">
         <div class="texto-presentacion">
-            <p>Hi! My name is</p>
-            <h2>Paloma Contreras</h2>
-            <p>QA Manual, Frontend Developer and Catlover❤️</p>
+            <h2 class="texto-presentacion-uno">
+                ¡Hola! Mi nombre es
+            </h2>
+            <h1 class="texto-presentacion-dos">
+                Paloma Contreras
+            </h1>
+            <p class="texto-presentacion-tres">
+                QA Manual, Desarrolladora Frontend y Catlover
+                <i class="fa-solid fa-cat"></i>
+            </p>
+            <p>
+                <a href="#proyectos" class="link-loquehago">Lo que hago</a>
+            </p>
         </div>
-        <div>
+        <div class="imagen-hola"> 
             <img src="imagenes/undraw_programmer_re_owql.svg" alt="ilustracion-de-programadora">
         </div>
     </section>
