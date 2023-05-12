@@ -8,29 +8,29 @@
     <title>Paloma Contreras - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1fb5fcdd4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- acá arraca el header -->
-    <header class="navbar container-nav">
+    <header>
         <nav class="container-nav">
-            <ul class="container-nav">
-                <li>
+            <ul class="lista-encabezado">
+                <li class="container-nav">
                     <a href="#hola" class="links-nav">
                         Hola</a>
                 </li>
-                <li>
-                    <a href="#conocimientos" class="links-nav">
-                        Conocimientos</a>
+                <li class="container-nav">
+                    <a href="#habilidades" class="links-nav">
+                        Habilidades</a>
                 </li>
-                <li>
+                <li class="container-nav">
                     <a href="#proyectos" class="links-nav">
                         Proyectos</a>
                 </li>
-                <li>
+                <li class="container-nav">
                     <a href="#contacto" class="links-nav contact">
                         Contacto</a>
                 </li>
@@ -41,7 +41,7 @@
 
     <!-- acá arranca sección presentación -->
     <a name="hola"></a>
-    <section class="secc-presentacion">
+    <section class="secc-container">
         <div class="texto-presentacion">
             <h2 class="texto-presentacion-uno">
                 ¡Hola! Mi nombre es
@@ -50,26 +50,76 @@
                 Paloma Contreras
             </h1>
             <p class="texto-presentacion-tres">
-                QA Manual, Desarrolladora Frontend y Catlover
+                Tester, desarrolladora frontend y catlover
                 <i class="fa-solid fa-cat"></i>
             </p>
             <p>
-                <a href="#proyectos" class="link-loquehago">Lo que hago</a>
+                <a href="#proyectos" class="link-loquehago">Lo que hago<a>
             </p>
         </div>
-        <div class="imagen-hola"> 
+        <div class="imagen-presentacion">
             <img src="imagenes/undraw_programmer_re_owql.svg" alt="ilustracion-de-programadora">
         </div>
     </section>
-    <section>
-        <h2>
-            Habilidades
+<!-- 
+        seccion hablidades -->
+        <a name="habilidades"></a>
+    <section class="secciones habilidades">
+        <h2 class="titulo-habilidades">
+                Mis Habilidades
         </h2>
+        <p class="parrafo-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur vel ab quas architecto.
+        </p>
+        </div>
+        <div class="tarjetas-padre">
+            <div class="tarjeta">
+                <i class="fa-brands fa-html5"></i>
+                <p class="nombre-habilidades">
+                    HTML 5
+                </p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="nombre-habilidades">
+                    CSS 3
+                </p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-brands fa-sass"></i>
+                <p class="nombre-habilidades">
+                    Sass
+                </p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-brands fa-js"></i>
+                <p class="nombre-habilidades">
+                    Javascript
+                </p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-brands fa-react"></i>
+                <p class="nombre-habilidades">
+                    React
+                </p>
+            </div>
+            <div class="tarjeta">
+                <i class="fa-brands fa-github"></i>
+                <p class="nombre-habilidades">
+                    Git
+                </p>
+            </div>
+        </div>
     </section>
-    <blockquote>
-        <h2>
-            "CIIIITAAAA"
-        </h2>
+    <blockquote class="secc-cita">
+        <p>
+            <i class="fa-solid fa-quote-left"></i>
+            Es bueno tener un final hacia el cual caminar; pero al final es el viaje lo que importa
+            <i class="fa-solid fa-quote-right"></i>
+        </p>
+        <p class="cita-autora">
+            Ursula K. Le Guin
+        </p>
     </blockquote>
     <section>
         <h2>
