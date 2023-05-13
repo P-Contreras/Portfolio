@@ -10,7 +10,7 @@ header {
 }
 
 .container-nav {
-    box-shadow:rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;0, 0.05) 0px 1px 1px 0px;
+    box-shadow: rgba(173, 79, 2, 0.56) 0px 22px 70px 4px;
 }
 
 .lista-encabezado {
@@ -83,18 +83,19 @@ li {
 }
 
 .link-loquehago {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
     background-color: #7b3e64;
     color: rgb(255, 255, 255);
-    padding: 10px 20px;
+    padding: 20px 40px;
     border-radius: 30px;
 }
 
 
 .imagen-presentacion {
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin-left: 100px;
 }
 
@@ -195,7 +196,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 150px 200px 400px 300px;
+    padding: 150px 200px 280px 300px;
 }
 
 blockquote {
@@ -227,7 +228,58 @@ blockquote {
 
 
 
+.proyectos {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+
+
+.tarjeta-proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 30px 70px;
+    border: 1px solid rgb(211, 13, 13);
+    border-radius: 15px;
+}
+
+
+
+img:not(.imagen-presentacion) {
+    max-width: 220px;
+    /* margin-bottom: 30px; */
+}
+
+
+#nombres-proyectos {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+#nombres-proyectos-2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 0px;
+    font-size: 20px;
+}
 
 
 
