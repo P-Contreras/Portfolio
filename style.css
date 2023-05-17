@@ -4,27 +4,40 @@
     background-color: #f2f2f2;
 }
 
-header {
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.encabezado {
     position: fixed;
+    box-shadow: rgba(173, 79, 2, 0.56) 0px 22px 70px 4px;
     width: 100%;
 }
 
 .container-nav {
-    box-shadow: rgba(173, 79, 2, 0.56) 0px 22px 70px 4px;
+    justify-content:space-between;
+    align-items:flex-end;
 }
+
 
 .lista-encabezado {
     display: flex;
-    justify-content:flex-end;
-    padding: 30px 350px;
+    padding: 10px 0;
+    margin: 20px;
+    justify-content: flex-end;
+    padding-right: 20em;
 }
+
 
 a {
     text-decoration: none;
 }
 
 .links-nav {
-    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
     font-size: 25px;
     border-radius: 60px;
     color: #0f0e17;
@@ -40,8 +53,6 @@ a {
 li {
     list-style: none;
 }
-
-/* CLASE REUTILIZABLE SECCIONES: */
 
 .secc-container {
     display: flex;
@@ -164,7 +175,7 @@ li {
     padding: 5px 10px;
 }
 
-.fa-brands {
+.iconos-habilidades {
     font-size: 3em;
 }
 
@@ -255,7 +266,6 @@ blockquote {
 
 img:not(.imagen-presentacion) {
     max-width: 220px;
-    /* margin-bottom: 30px; */
 }
 
 
@@ -281,9 +291,55 @@ img:not(.imagen-presentacion) {
     font-size: 20px;
 }
 
+.contenedor-secc-contacto {
+    display: flex;
+    justify-content: center;
+    padding: 100px 10px;
+}
 
+.tarjeta-contacto {
+    border: 2px solid black;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 50px;
+}
 
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
 
+.titulo-contacto {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 4em;
+}
+
+.parrafo-contacto {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 320px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.lista-redes {
+    padding: 20px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.iconos-lista {
+    margin-right: 12px;
+    color: #f25f4c;
+}
+
+.nombre-links {
+    font-size: 25px;
+}
 
 
 

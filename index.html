@@ -15,7 +15,7 @@
 
 <body>
     <!-- acá arraca el header -->
-    <header>
+    <header class="encabezado">
         <nav class="container-nav">
             <ul class="lista-encabezado">
                 <li>
@@ -73,37 +73,37 @@
         </p>
         <div class="tarjetas-padre">
             <div class="tarjeta">
-                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-html5 iconos-habilidades"></i>
                 <p class="nombre-habilidades">
                     HTML 5
                 </p>
             </div>
             <div class="tarjeta">
-                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-css3-alt iconos-habilidades"></i>
                 <p class="nombre-habilidades">
                     CSS 3
                 </p>
             </div>
             <div class="tarjeta">
-                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-sass iconos-habilidades"></i>
                 <p class="nombre-habilidades">
                     Sass
                 </p>
             </div>
             <div class="tarjeta">
-                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-js iconos-habilidades"></i>
                 <p class="nombre-habilidades">
                     Javascript
                 </p>
             </div>
             <div class="tarjeta">
-                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-react iconos-habilidades"></i>
                 <p class="nombre-habilidades">
                     React
                 </p>
             </div>
             <div class="tarjeta">
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github iconos-habilidades"></i>
                 <p class="nombre-habilidades">
                     Git
                 </p>
@@ -196,11 +196,58 @@
 
         <!-- ##fin seccion proyectos## -->
 
-    <section>
-        <h2>
-            Formulario de CONTACTO
-        </h2>
+        <!-- ##inicio sección formulario## -->
+
+    <section class="contenedor-secc-contacto tarjeta-contacto">
+        <div class="contenedor-contacto">
+            <h2 class="titulo-contacto">
+                Contactame
+            </h2>
+            <p class="parrafo-contacto">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit explicabo, corrupti suscipit pariatur cum, rem veritatis ab vel vitae dolorum incidunt quam. Fugiat autem adipisci similique ipsam expedita illo quidem.
+            </p>
+            <ul>
+                <li class="lista-redes">
+                    <a href="#" class="nombre-links">
+                    <i class="fa-solid fa-envelope iconos-lista"></i>
+                    palo.contreras@live.com
+                </a>
+                </li>
+                <li class="lista-redes">
+                    <a href="https://www.linkedin.com/in/paloma-ailen-contreras/" target="_blank" class="nombre-links">
+                    <i class="fa-brands fa-linkedin iconos-lista"></i>
+                    paloma-ailen-contreras
+                </a>
+                </li>
+                <li class="lista-redes">
+                    <a href="https://github.com/P-Contreras" target="_blank" class="nombre-links">
+                    <i class="fa-brands fa-github iconos-lista"></i>
+                    P-Contreras
+                </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contenedor-contacto">
+            <h2 class="titulo-contacto">
+                Escribime
+            </h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="nombre" name="apellido" placeholder="Ingrese su apellido" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su mail" required>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje aquí" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        </div>
     </section>
+
+
+    <!-- ##footer##  -->
     <footer>
         Footer con links de navegacion y links de contacto
     </footer>
