@@ -16,7 +16,7 @@
 <body>
     <!-- acá arraca el header -->
     <header class="encabezado">
-        <nav class="container-nav">
+        <nav>
             <ul class="lista-encabezado">
                 <li>
                     <a href="#hola" class="links-nav">
@@ -57,7 +57,7 @@
                 <a href="#proyectos" class="link-loquehago">Lo que hago<a>
             </p>
         </div>
-            <img class="imagen-presentacion" src="imagenes/undraw_programmer_re_owql.svg" alt="ilustracion-de-programadora">
+        <img class="imagen-presentacion" src="imagenes/World wide web_Monochromatic.svg" alt="ilustracion-de-programadora">
         
     </section>
 
@@ -197,7 +197,7 @@
         <!-- ##fin seccion proyectos## -->
 
         <!-- ##inicio sección formulario## -->
-
+        <a name="contacto"></a>
     <section class="contenedor-secc-contacto tarjeta-contacto">
         <div class="contenedor-contacto">
             <h2 class="titulo-contacto">
@@ -232,15 +232,19 @@
                 Escribime
             </h2>
             <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-                <label for="apellido">Apellido</label>
-                <input type="text" id="nombre" name="apellido" placeholder="Ingrese su apellido" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su mail" required>
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje aquí" required></textarea>
-                <input type="submit" value="Enviar">
+                <label class="etiqueta-form" for="nombre">Nombre</label>
+                <input class="inputs-form" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                <label class="etiqueta-form" for="apellido">Apellido</label>
+                <input class="inputs-form" type="text" id="nombre" name="apellido" placeholder="Ingrese su apellido" required>
+
+                <label class="etiqueta-form" for="email">Email</label>
+                <input class="inputs-form" type="email" id="email" name="email" placeholder="Ingrese su mail" required>
+
+                <label class="etiqueta-form" for="mensaje">Mensaje</label>
+                <textarea class="inputs-form" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje aquí" required></textarea>
+
+                <input class="boton-form" type="submit" value="Enviar">
             </form>
         </div>
         </div>
@@ -248,9 +252,47 @@
 
 
     <!-- ##footer##  -->
-    <footer>
-        Footer con links de navegacion y links de contacto
+    <footer class="pie-de-pagina">
+        <nav>
+            <ul class="navbar-footer">
+                <li class="links-pie">
+                    <a href="#hola" class="hola">
+                        Hola</a>
+                </li>
+                <li class="links-pie">
+                    <a href="#habilidades">
+                        Habilidades</a>
+                </li>
+                <li class="links-pie">
+                    <a href="#proyectos">
+                        Proyectos</a>
+                </li>
+                <li class="links-pie">
+                    <a href="#contacto">
+                        Contacto</a>
+                </li>
+            </ul>
+        </nav>
+            <ul class="iconos-redes-pie">
+                <li class="lista-redes">
+                    <a href="#" class="nombre-links">
+                    <i class="fa-solid fa-envelope iconos-lista"></i>
+                </a>
+                </li>
+                <li class="lista-redes">
+                    <a href="https://www.linkedin.com/in/paloma-ailen-contreras/" target="_blank" class="nombre-links">
+                    <i class="fa-brands fa-linkedin iconos-lista"></i>
+                </a>
+                </li>
+                <li class="lista-redes">
+                    <a href="https://github.com/P-Contreras" target="_blank" class="nombre-links">
+                    <i class="fa-brands fa-github iconos-lista"></i>
+                </a>
+                </li>
+        </ul>
+        <p>
+            Hecho con ❤️ por Ada
+        </p>
     </footer>
 </body>
-
 </html>
