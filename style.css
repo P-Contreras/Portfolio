@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* background-color: #f2f2f2; */
     box-sizing: border-box;
 }
 
@@ -9,31 +8,24 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
-    min-width: 100vh;
 }
 
 
 .encabezado {
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
     box-shadow: rgba(243, 116, 12, 0.56) 0px 22px 70px 4px;
-    background-color: #f2f2f2;
+    background-color: rgb(238, 232, 232);
 }
 
 .lista-encabezado {
+    width: 100%;
     display: flex;
     padding: 30px 0;
     justify-content: flex-end;
-    padding-right: 20em;
-}
-
-@media (max-width: 990px) {
-    .lista-encabezado {
-        padding-right: 1em;
-        justify-content: center;
-        width: 100%;
-    }
+    padding-right: 15em;
 }
 
 a {
@@ -48,12 +40,6 @@ a {
     padding: 15px 40px;
 }
 
-@media (max-width: 990px) {
-    .links-nav {
-        padding: 5px 10px;
-    }
-}
-
 .contact {
     background-color: #7b3e64;
     color: white;
@@ -63,6 +49,7 @@ a {
 li {
     list-style: none;
 }
+
 
 .secc-container {
     display: flex;
@@ -140,7 +127,8 @@ li {
 }
 
 .secciones {
-    background-color: #4e4d61;
+    background: rgb(238,237,236);
+    background: radial-gradient(circle, rgba(238,237,236,1) 0%, rgba(123,62,100,1) 100%, rgba(91,46,74,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,7 +140,6 @@ li {
     font-size: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -185,7 +172,6 @@ li {
 }
 
 .titulo-habilidades {
-    background-color: #4e4d61;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
     margin-bottom: 25px;
@@ -194,8 +180,7 @@ li {
 .parrafo-container {
     width: 400px;
     text-align: center;
-    background-color: #4e4d61;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     margin-bottom: 60px;
@@ -239,7 +224,6 @@ li {
 
 blockquote {
     font-size: 2em;
-    border-left: 5px solid #ccc;
     padding-left: 1em;
     margin-left: 0;
     font-family: 'Josefin Sans', sans-serif;
@@ -290,14 +274,12 @@ blockquote {
     background-color: #f2f2f2;
 }
 
-
-
 img:not(.imagen-presentacion) {
     max-width: 220px;
 }
 
 
-#nombres-proyectos {
+.nombres-proyectos {
     font-family: 'Josefin Sans', sans-serif;
     color: black;
     font-weight: bolder;
@@ -308,7 +290,7 @@ img:not(.imagen-presentacion) {
     font-size: 20px;
 }
 
-#nombres-proyectos-2 {
+.nombres-proyectos-2 {
     font-family: 'Josefin Sans', sans-serif;
     color: black;
     font-weight: bolder;
@@ -322,43 +304,40 @@ img:not(.imagen-presentacion) {
 .contenedor-secc-contacto {
     display: flex;
     justify-content: center;
-    padding: 100px 10px;
 }
 
-.tarjeta-contacto {
-    border: 2px solid black;
-    margin-top: 150px;
-    margin-bottom: 210px;
-    margin-left: 400px;
-    margin-right: 400px;
-    border-radius: 50px;
-    min-width: 1000px;
+.container-contacto {
+    border: 5px solid black;
+    display: flex;
+    width: 60%;
+    margin: 70px 0;
+    border-radius: 20px;
 }
 
 .contenedor-contacto {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 500px;
+    flex-direction: column;
+    width: 60%;
+    height: 500px;
+    margin-top: 10%;
 }
 
 .titulo-contacto {
-    font-family: 'Josefin Sans', sans-serif;
     font-weight: bolder;
-    margin-bottom: 20px;
-    font-size: 4em;
+    margin-bottom: 30px;
+    font-size: 3em;
 }
 
 .parrafo-contacto {
-    font-family: 'Josefin Sans', sans-serif;
     width: 320px;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
 .lista-redes {
-    padding: 20px 10px;
-    font-family: 'Josefin Sans', sans-serif;
+    padding: 12px 10px;
+
 }
 
 .iconos-lista {
@@ -368,14 +347,31 @@ img:not(.imagen-presentacion) {
 }
 
 .nombre-links {
-    font-size: 25px;
+    font-size: 20px;
 }
 
-form {
+
+.formulario {
     display: flex;
     flex-direction: column;
-    width: 280px;
+    align-items: center;
 }
+
+.container-nombreapellido {
+    display: flex;
+}
+
+.container-email {
+    display: flex;
+    width: 100%;
+}
+
+.container-mensaje {
+    display: flex;
+    width: 100%;
+
+}
+
 
 .etiqueta-form {
     text-align: center;
@@ -384,15 +380,13 @@ form {
 }
 
 .inputs-form {
+    display: flex;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
     border-color: #f25f4c;
 }
 
-textarea {
-    max-width: 280px;
-}
 
 .boton-form {
     display: flex;
@@ -403,6 +397,30 @@ textarea {
     font-family:'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1500px) {
+    .contenedor-secc-contacto {
+        flex-direction: column;
+    }
+    .container-contacto {
+    width: 90%;
+    }
+    
+    .contenedor-contacto {
+    width: 80%;
+    margin-top: 5%;
+    }
+    
+    .parrafo-contacto {
+    width: 80%;
+    }
+    
+    .container-nombreapellido,
+    .container-email,
+    .container-mensaje {
+    flex-direction: column;
+    }
 }
 
 .pie-de-pagina {

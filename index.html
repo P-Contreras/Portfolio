@@ -141,7 +141,7 @@
 
                 <a href="https://www.google.com/" target="_blank">
                     <img src="./imagenes/undraw_personal_website_re_c8dv.svg" alt="proyecto-portfolio">
-                        <p id="nombres-proyectos">
+                        <p class="nombres-proyectos">
                             Portfolio
                         </p>
                 </a>
@@ -150,7 +150,7 @@
             <div class="tarjeta-proyecto">
                 <a href="https://www.google.com/" target="_blank">
                     <img src="./imagenes/undraw_remote_design_team_re_urdx.svg" alt="proyecto-editor-de-memes">
-                        <p id="nombres-proyectos">
+                        <p class="nombres-proyectos">
                             Editor de memes
                         </p>
                 </a>
@@ -159,7 +159,7 @@
             <div class="tarjeta-proyecto">
                 <a href="https://www.google.com/" target="_blank">
                     <img src="./imagenes/undraw_transfer_money_re_6o1h.svg" alt="proyecto-app-de-gastos">
-                    <p id="nombres-proyectos-2">
+                    <p class="nombres-proyectos-2">
                         Aplicacion de gastos
                     </p>
                 </a>
@@ -168,7 +168,7 @@
             <div class="tarjeta-proyecto">
                 <a href="https://www.google.com/" target="_blank">
                     <img src="./imagenes/undraw_super_woman_dv-0-y.svg" alt="proyecto-buscador-de-comics">
-                    <p id="nombres-proyectos-2">
+                    <p class="nombres-proyectos-2">
                         Buscador de comics
                     </p>
                 </a>
@@ -177,7 +177,7 @@
             <div class="tarjeta-proyecto">
                 <a href="https://www.google.com/" target="_blank">
                     <img src="./imagenes/undraw_task_list_6x9d.svg" alt="proyecto-app-listas-de-tareas">
-                    <p id="nombres-proyectos">
+                    <p class="nombres-proyectos">
                         Listas de tareas
                     </p>
                 </a>
@@ -186,7 +186,7 @@
             <div class="tarjeta-proyecto">
                 <a href="https://www.google.com/" target="_blank">
                     <img src="./imagenes/undraw_horror_movie_3988.svg" alt="proyecto-buscador-de-peliculas">
-                    <p id="nombres-proyectos-2">
+                    <p class="nombres-proyectos-2">
                         Buscador de películas
                     </p>
                 </a>
@@ -197,56 +197,66 @@
         <!-- ##fin seccion proyectos## -->
 
         <!-- ##inicio sección formulario## -->
+            <!-- hacer la section, hacer un div para el contenedor con margen
+            y 2 divs que contengan las dos partes del contactame -->
+
         <a name="contacto"></a>
-    <section class="contenedor-secc-contacto tarjeta-contacto">
-        <div class="contenedor-contacto">
-            <h2 class="titulo-contacto">
-                Contactame
-            </h2>
-            <p class="parrafo-contacto">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit explicabo, corrupti suscipit pariatur cum, rem veritatis ab vel vitae dolorum incidunt quam. Fugiat autem adipisci similique ipsam expedita illo quidem.
-            </p>
-            <ul>
-                <li class="lista-redes">
-                    <a href="#" class="nombre-links">
-                    <i class="fa-solid fa-envelope iconos-lista"></i>
-                    palo.contreras@live.com
-                </a>
-                </li>
-                <li class="lista-redes">
-                    <a href="https://www.linkedin.com/in/paloma-ailen-contreras/" target="_blank" class="nombre-links">
-                    <i class="fa-brands fa-linkedin iconos-lista"></i>
-                    paloma-ailen-contreras
-                </a>
-                </li>
-                <li class="lista-redes">
-                    <a href="https://github.com/P-Contreras" target="_blank" class="nombre-links">
-                    <i class="fa-brands fa-github iconos-lista"></i>
-                    P-Contreras
-                </a>
-                </li>
-            </ul>
-        </div>
-        <div class="contenedor-contacto">
-            <h2 class="titulo-contacto">
-                Escribime
-            </h2>
-            <form>
-                <label class="etiqueta-form" for="nombre">Nombre</label>
-                <input class="inputs-form" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+    <section class="contenedor-secc-contacto">
+        <div class="container-contacto">
+            <div class="contenedor-contacto">
+                <h2 class="titulo-contacto">
+                    Contactame
+                </h2>
+                <p class="parrafo-contacto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit explicabo, corrupti suscipit pariatur cum, rem veritatis ab vel vitae dolorum incidunt quam. Fugiat autem adipisci similique ipsam expedita illo quidem.
+                </p>
+                <ul>
+                    <li class="lista-redes">
+                        <a href="#" class="nombre-links">
+                        <i class="fa-solid fa-envelope iconos-lista"></i>
+                        palo.contreras@live.com
+                    </a>
+                    </li>
+                    <li class="lista-redes">
+                        <a href="https://www.linkedin.com/in/paloma-ailen-contreras/" target="_blank" class="nombre-links">
+                        <i class="fa-brands fa-linkedin iconos-lista"></i>
+                        paloma-ailen-contreras
+                    </a>
+                    </li>
+                    <li class="lista-redes">
+                        <a href="https://github.com/P-Contreras" target="_blank" class="nombre-links">
+                        <i class="fa-brands fa-github iconos-lista"></i>
+                        P-Contreras
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contenedor-contacto">
+                <h2 class="titulo-contacto">
+                    Escribime
+                </h2>
+                <form class="formulario">
+                    <div class="container-nombreapellido">
+                        <label class="etiqueta-form" for="nombre">Nombre</label>
+                        <input class="inputs-form" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
 
-                <label class="etiqueta-form" for="apellido">Apellido</label>
-                <input class="inputs-form" type="text" id="nombre" name="apellido" placeholder="Ingrese su apellido" required>
-
-                <label class="etiqueta-form" for="email">Email</label>
-                <input class="inputs-form" type="email" id="email" name="email" placeholder="Ingrese su mail" required>
-
-                <label class="etiqueta-form" for="mensaje">Mensaje</label>
-                <textarea class="inputs-form" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje aquí" required></textarea>
-
-                <input class="boton-form" type="submit" value="Enviar">
-            </form>
-        </div>
+                        <label class="etiqueta-form" for="apellido">Apellido</label>
+                        <input class="inputs-form" type="text" id="nombre" name="apellido" placeholder="Ingrese su apellido" required>
+                    </div>
+    
+                    <div class="container-email">
+                        <label class="etiqueta-form" for="email">Email</label>
+                        <input class="inputs-form" type="email" id="email" name="email" placeholder="Ingrese su mail" required>
+                    </div>
+    
+                    <div class="container-mensaje">
+                        <label class="etiqueta-form" for="mensaje">Mensaje</label>
+                        <textarea class="inputs-form" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje aquí" required></textarea>
+                    </div>
+    
+                    <input class="boton-form" type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
     </section>
 
@@ -290,9 +300,6 @@
                 </a>
                 </li>
         </ul>
-        <p>
-            Hecho con ❤️ por Ada
-        </p>
     </footer>
 </body>
 </html>
