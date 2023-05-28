@@ -48,9 +48,23 @@ a {
     padding: 15px 40px;
 }
 
+.links-nav:hover {
+    color: #f25f4c;
+}
+
+.links-nav:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;;
+    border: rgb(214, 143, 95);
+    border-radius: 50px;
+
+}
 .contact {
     background-color: #7b3e64;
     color: white;
+}
+
+.contact:hover {
+    background-color: #8b5175;
 }
 
 @media screen and (max-width: 860px) {
@@ -58,8 +72,6 @@ a {
         display: none;
     }
 }
-
-
 
 li {
     list-style: none;
@@ -127,6 +139,11 @@ li {
     border-radius: 30px;
 }
 
+.link-loquehago:hover {
+    color: #ff681c;
+    background-color: #8b5175;
+}
+
 
 .imagen-presentacion {
     display: flex;
@@ -177,13 +194,18 @@ li {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px;
-    width: 320px;
-    padding: 80px 80px;
+    margin: 30px;
+    width: 280px;
+    height: 280px;
+    padding: 60px 20px;
     border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 15px;
     background-color: #f2f2f2;
-    box-sizing:border-box;
+}
+
+.tarjeta:hover {
+    border-color: #f25f4c;
 }
 
 .nombre-habilidades {
@@ -194,6 +216,10 @@ li {
     font-weight:bolder;
 }
 
+.nombre-habilidades:hover {
+    color: #f25f4c;
+}
+
 .titulo-habilidades {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
@@ -201,7 +227,6 @@ li {
 }
 
 .parrafo-container {
-    width: 400px;
     text-align: center;
     color: rgb(0, 0, 0);
     font-family: 'Josefin Sans', sans-serif;
@@ -292,7 +317,7 @@ blockquote {
     flex-wrap: wrap;
     margin: 20px;
     padding: 30px 70px;
-    border: 1px solid rgb(211, 13, 13);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 15px;
     background-color: #f2f2f2;
 }
@@ -301,6 +326,10 @@ img:not(.imagen-presentacion) {
     max-width: 220px;
 }
 
+.tarjeta-proyecto:hover {
+    border: 1px solid rgb(211, 13, 13);
+    box-shadow: rgba(243, 116, 12, 0.56) 0px 22px 70px 4px; ;
+}
 
 .nombres-proyectos {
     font-family: 'Josefin Sans', sans-serif;
@@ -362,16 +391,20 @@ img:not(.imagen-presentacion) {
 
 .lista-redes {
     padding: 12px 10px;
+    font-size: 6em;
+    border-radius: 25px;
 }
 
 .iconos-lista {
     margin-right: 12px;
     color: #7b3e64;
     font-size: 30px;
+    border-radius: 100%;
 }
 
+
 .nombre-links {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 
@@ -385,6 +418,13 @@ img:not(.imagen-presentacion) {
     width: 100%;
 }
 
+.container-email {
+    margin-left: 60px;
+}
+
+input { 
+    outline: none; 
+}
 
 textarea {
     width: 100%;
@@ -392,6 +432,8 @@ textarea {
     resize: none;
     padding: 20px;
 }
+
+
 
 form {
     display: flex;
@@ -408,19 +450,40 @@ label {
     padding: 12px;
     border-radius: 10px;
     margin-bottom: 20px;
-    border-color: #f25f4c;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 2px solid rgb(219, 123, 12);
+    outline: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
 
 .boton-form {
     width: 40%;
-    padding: 12px;
+    padding: 10px 20px;
     background-color: #f25f4c;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family:'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
+
+.boton-form:hover {
+    background-color: #d13c29;
+}
+
+.boton-form:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(219, 64, 44, 0.4);
+}
+
+.submit-button:active {
+    background-color: #b32717;
+}
+
 
 @media (max-width: 1700px) {
     textarea {
@@ -431,7 +494,7 @@ label {
     }
 }
 
-@media (max-width: 1326px) {
+@media (max-width: 1400px) {
     .margen-contacto {
         display: flex;
         align-items: center;
