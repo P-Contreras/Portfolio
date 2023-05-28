@@ -40,6 +40,7 @@
     <!-- hasta acá header -->
 
     <!-- acá arranca sección presentación -->
+    <main>
     <a name="hola"></a>
     <section class="secc-container">
         <div class="texto-presentacion">
@@ -69,7 +70,7 @@
                 Mis Habilidades
         </h2>
         <p class="parrafo-container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur vel ab quas architecto.
+            Estas son las herramientas que manejo como desarrolladora
         </p>
         <div class="tarjetas-padre">
             <div class="tarjeta">
@@ -133,12 +134,12 @@
                 Grilla de proyectos
             </h2>
             <p class="parrafo-container">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis vel dignissimos aliquid nostrum fugit.
+                Estos son algunos de los proyectos que desarrollé
             </p>
         </div>
             <div class="tarjetas-padre">
-            <div class="tarjeta-proyecto">
 
+            <div class="tarjeta-proyecto">
                 <a href="https://www.google.com/" target="_blank">
                     <img src="./imagenes/undraw_personal_website_re_c8dv.svg" alt="proyecto-portfolio">
                         <p class="nombres-proyectos">
@@ -197,18 +198,16 @@
         <!-- ##fin seccion proyectos## -->
 
         <!-- ##inicio sección formulario## -->
-            <!-- hacer la section, hacer un div para el contenedor con margen
-            y 2 divs que contengan las dos partes del contactame -->
 
         <a name="contacto"></a>
-    <section class="contenedor-secc-contacto">
-        <div class="container-contacto">
+    <section class="seccion-contacto">
+        <div class="margen-contacto">
             <div class="contenedor-contacto">
                 <h2 class="titulo-contacto">
                     Contactame
                 </h2>
                 <p class="parrafo-contacto">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit explicabo, corrupti suscipit pariatur cum, rem veritatis ab vel vitae dolorum incidunt quam. Fugiat autem adipisci similique ipsam expedita illo quidem.
+                    Podes contactarme a través de mis redes sociales:
                 </p>
                 <ul>
                     <li class="lista-redes">
@@ -236,22 +235,30 @@
                     Escribime
                 </h2>
                 <form class="formulario">
-                    <div class="container-nombreapellido">
-                        <label class="etiqueta-form" for="nombre">Nombre</label>
-                        <input class="inputs-form" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    <div class="container-nombre-apellido">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input class="inputs-form" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input class="inputs-form" type="text" id="nombre" name="apellido" placeholder="Ingrese su apellido" required>
+                        </div>
+                    </div>
+    
+                    <div class="container-email-mensaje">
+                        <div> 
+                            <label for="email">Email</label>
+                            <input class="inputs-form" type="email" id="email" name="email" placeholder="Ingrese su mail" required>
 
-                        <label class="etiqueta-form" for="apellido">Apellido</label>
-                        <input class="inputs-form" type="text" id="nombre" name="apellido" placeholder="Ingrese su apellido" required>
+                        </div>
                     </div>
     
-                    <div class="container-email">
-                        <label class="etiqueta-form" for="email">Email</label>
-                        <input class="inputs-form" type="email" id="email" name="email" placeholder="Ingrese su mail" required>
-                    </div>
-    
-                    <div class="container-mensaje">
-                        <label class="etiqueta-form" for="mensaje">Mensaje</label>
-                        <textarea class="inputs-form" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje aquí" required></textarea>
+                    <div class="container-email-mensaje">
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="inputs-form" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje aquí" required></textarea>
+                        </div>
                     </div>
     
                     <input class="boton-form" type="submit" value="Enviar">
@@ -259,14 +266,15 @@
             </div>
         </div>
     </section>
+</main>
 
 
     <!-- ##footer##  -->
     <footer class="pie-de-pagina">
-        <nav>
+        <div>
             <ul class="navbar-footer">
                 <li class="links-pie">
-                    <a href="#hola" class="hola">
+                    <a href="#hola">
                         Hola</a>
                 </li>
                 <li class="links-pie">
@@ -282,7 +290,7 @@
                         Contacto</a>
                 </li>
             </ul>
-        </nav>
+        </div>
             <ul class="iconos-redes-pie">
                 <li class="lista-redes">
                     <a href="#" class="nombre-links">

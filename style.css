@@ -10,14 +10,23 @@ body {
     padding: 0;
 }
 
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+}
 
 .encabezado {
-    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
     box-shadow: rgba(243, 116, 12, 0.56) 0px 22px 70px 4px;
     background-color: rgb(238, 232, 232);
+    padding-right: 20%;
 }
 
 .lista-encabezado {
@@ -25,7 +34,6 @@ body {
     display: flex;
     padding: 30px 0;
     justify-content: flex-end;
-    padding-right: 15em;
 }
 
 a {
@@ -44,6 +52,13 @@ a {
     background-color: #7b3e64;
     color: white;
 }
+
+@media screen and (max-width: 860px) {
+    .lista-encabezado {
+        display: none;
+    }
+}
+
 
 
 li {
@@ -150,6 +165,13 @@ li {
     justify-content: center;
 }
 
+@media  (max-width: 550px) {
+    .secciones {
+        padding: 30px;
+    }
+    
+}
+
 .tarjeta {
     display: flex;
     flex-direction: column;
@@ -161,6 +183,7 @@ li {
     border: 1px solid grey;
     border-radius: 15px;
     background-color: #f2f2f2;
+    box-sizing:border-box;
 }
 
 .nombre-habilidades {
@@ -301,16 +324,17 @@ img:not(.imagen-presentacion) {
     font-size: 20px;
 }
 
-.contenedor-secc-contacto {
+.seccion-contacto  {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.container-contacto {
-    border: 5px solid black;
+.margen-contacto {
+    border: 3px solid black;
     display: flex;
     width: 60%;
-    margin: 70px 0;
+    margin: 80px;
     border-radius: 20px;
 }
 
@@ -318,9 +342,8 @@ img:not(.imagen-presentacion) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 60%;
-    height: 500px;
-    margin-top: 10%;
+    margin: 10%;
+    margin-left: 5%;
 }
 
 .titulo-contacto {
@@ -330,14 +353,15 @@ img:not(.imagen-presentacion) {
 }
 
 .parrafo-contacto {
-    width: 320px;
-    font-size: 18px;
-    margin-bottom: 20px;
+    width: 300px;
+    font-size: 23px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+
 }
 
 .lista-redes {
     padding: 12px 10px;
-
 }
 
 .iconos-lista {
@@ -351,37 +375,37 @@ img:not(.imagen-presentacion) {
 }
 
 
-.formulario {
+.container-nombre-apellido {
+    display: flex;
+}
+
+.container-email-mensaje {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.container-nombreapellido {
-    display: flex;
-}
-
-.container-email {
-    display: flex;
     width: 100%;
 }
 
-.container-mensaje {
-    display: flex;
-    width: 100%;
 
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 20px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
-.etiqueta-form {
-    text-align: center;
-    padding: 10px;
+label {
+    margin: 2% 2%;
     font-weight: bold;
 }
 
 .inputs-form {
-    display: flex;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     margin-bottom: 20px;
     border-color: #f25f4c;
@@ -389,8 +413,7 @@ img:not(.imagen-presentacion) {
 
 
 .boton-form {
-    display: flex;
-    justify-content: center;
+    width: 40%;
     padding: 12px;
     background-color: #f25f4c;
     border-radius: 20px;
@@ -399,50 +422,68 @@ img:not(.imagen-presentacion) {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1500px) {
-    .contenedor-secc-contacto {
-        flex-direction: column;
+@media (max-width: 1700px) {
+    textarea {
+        width: 100%;
     }
-    .container-contacto {
-    width: 90%;
-    }
-    
-    .contenedor-contacto {
-    width: 80%;
-    margin-top: 5%;
-    }
-    
     .parrafo-contacto {
-    width: 80%;
+        width: 40%;
     }
-    
-    .container-nombreapellido,
-    .container-email,
-    .container-mensaje {
-    flex-direction: column;
+}
+
+@media (max-width: 1326px) {
+    .margen-contacto {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: none;
+    }
+    form {
+        display: flex;
+        width: 80%;
+        flex-wrap:wrap ;
     }
 }
 
 .pie-de-pagina {
+    display: flex;
+    flex-direction: column;
     background-color: #f25f4c;
-    padding: 50px 30px;
+    width: 100%;
+    /* padding: 50px 30px; */
 }
 
 .navbar-footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 50px 0 30px 0;
 }
 
 .links-pie {
-    font-size: 22px;
     padding: 15px 30px;
+    font-size: 22px;
     font-weight: bold;
-    color: white;
 }
 
 .iconos-redes-pie {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .pie-de-pagina {
+        padding: 30px 15px;
+        max-width: 100%;
+    }
+
+    .navbar-footer {
+        flex-wrap: wrap;
+    }
+
+    .links-pie {
+        padding: 15px;
+        font-size: 18px;
+    }
 }
