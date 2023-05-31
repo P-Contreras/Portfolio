@@ -20,6 +20,8 @@ body {
     }
 }
 
+/* aca comienza el encabezado  */
+
 .encabezado {
     position: sticky;
     top: 0;
@@ -77,12 +79,14 @@ li {
     list-style: none;
 }
 
+/* seccion presentacion  */
 
 .secc-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 250px 200px 400px 300px;
+    margin-top: 10%;
+    margin-bottom: 12%;
 }
 
 
@@ -102,6 +106,7 @@ li {
     .texto-presentacion {
         margin-bottom: 50px;
     }
+
 }
 
 .texto-presentacion-uno {
@@ -130,6 +135,10 @@ li {
     font-size: 30px;
 }
 
+.fa-cat:hover {
+    color: #ff681c;
+}
+
 .link-loquehago {
     font-size: 22px;
     font-weight: bold;
@@ -155,8 +164,12 @@ li {
 @media (max-width: 990px) {
     .imagen-presentacion {
         margin-left: 0;
+        width: 250px;
+        height: 250px;
     }
 }
+
+/* seccion habilidades */
 
 .secciones {
     background: rgb(238,237,236);
@@ -221,6 +234,8 @@ li {
 }
 
 .titulo-habilidades {
+    display: flex;
+    justify-content: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
     margin-bottom: 25px;
@@ -263,11 +278,20 @@ li {
     color: #171414;
 }
 
+/* seccion cita */
+
 .secc-cita {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 150px 200px 280px 300px;
+}
+
+@media (max-width: 700px) {
+    .secc-cita {
+        padding: 0;
+    }
+
 }
 
 blockquote {
@@ -296,7 +320,7 @@ blockquote {
     padding: 15px;
 }
 
-
+/* seccion proyectos */
 
 .proyectos {
     font-size: 1em;
@@ -306,8 +330,6 @@ blockquote {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-
 
 .tarjeta-proyecto {
     display: flex;
@@ -353,6 +375,8 @@ img:not(.imagen-presentacion) {
     font-size: 20px;
 }
 
+/* seccion contacto  */
+
 .seccion-contacto  {
     display: flex;
     justify-content: center;
@@ -386,13 +410,21 @@ img:not(.imagen-presentacion) {
     font-size: 23px;
     margin-left: 20%;
     margin-bottom: 10%;
-
 }
 
-.lista-redes {
-    padding: 12px 10px;
-    font-size: 6em;
-    border-radius: 25px;
+.li-redes {
+    padding: 10px 5px;
+    font-size: 5em;
+    margin: 5px;
+}
+
+.li-redes .nombre-links:hover {
+    color: #f25f4c;
+}
+
+.li-redes .iconos-lista:hover {
+    color: #f25f4c;
+    font-weight: bold;
 }
 
 .iconos-lista {
@@ -412,6 +444,12 @@ img:not(.imagen-presentacion) {
     display: flex;
 }
 
+@media (max-width: 500px){
+    .container-nombre-apellido {
+        flex-wrap: wrap;
+    }
+}
+
 .container-email-mensaje {
     display: flex;
     flex-direction: column;
@@ -419,26 +457,23 @@ img:not(.imagen-presentacion) {
 }
 
 .container-email {
-    margin-left: 60px;
-}
-
-input { 
-    outline: none; 
+    /* margin-left: 20%; */
+    flex-wrap: wrap;
 }
 
 textarea {
     width: 100%;
     height: 150px;
     resize: none;
+    overflow: auto;
+    resize: vertical;
     padding: 20px;
 }
 
-
-
-form {
+.formulario {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
 }
 
 label {
@@ -480,10 +515,6 @@ textarea:focus {
     box-shadow: 0 0 0 3px rgba(219, 64, 44, 0.4);
 }
 
-.submit-button:active {
-    background-color: #b32717;
-}
-
 
 @media (max-width: 1700px) {
     textarea {
@@ -491,6 +522,9 @@ textarea:focus {
     }
     .parrafo-contacto {
         width: 40%;
+    }
+    .boton-form {
+        font-size: 10px;
     }
 }
 
@@ -508,6 +542,8 @@ textarea:focus {
     }
 }
 
+/* seccion footer  */
+
 .pie-de-pagina {
     display: flex;
     flex-direction: column;
@@ -520,6 +556,14 @@ textarea:focus {
     display: flex;
     justify-content: center;
     padding: 50px 0 30px 0;
+    
+}
+
+.texto-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
 }
 
 .links-pie {
@@ -535,6 +579,13 @@ textarea:focus {
     margin-bottom: 30px;
 }
 
+.lista-redes {
+    padding: 0 20px;
+}
+.lista-redes i:hover {
+    color: black;
+}
+
 @media (max-width: 600px) {
     .pie-de-pagina {
         padding: 30px 15px;
@@ -542,6 +593,10 @@ textarea:focus {
     }
 
     .navbar-footer {
+        flex-wrap: wrap;
+    }
+
+    .iconos-redes-pie {
         flex-wrap: wrap;
     }
 
